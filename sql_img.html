@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Image</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #8B4513;
+        }
+        h2 {
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0;
+        }
+        .content, .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .sql1 img,
+        .sql2 img {
+            width: 40vw;
+            height: 63vh;
+            display: block;  
+            border-radius: 10px;
+        }
+        .sql3 img {
+            width: 30vw;
+            height: 43vh;
+            display: block;  
+            border-radius: 10px;
+        }
+        .output1 img,
+        .output2 img,
+        .output3 img,
+        .output4 img,
+        .output5 img,
+        .output6 img {
+            width: 45vw;
+            height: 40vh;
+            display: block;
+            border-radius: 10px;  
+        }
+        a {
+            font-size: 1.5vw;
+            font-weight: bolder;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover {
+            transform: scale(1.05);
+            color: burlywood;
+        }
+        h4 {
+            font-family: 'Russo One', sans-serif;
+            margin-left: 6%;
+            margin-bottom: 0;
+            font-size: 1.7vw;
+            margin-top: 1.3%;
+            background-color: black;
+            width: 5.2vw;
+            border-radius: 5px;
+            padding: 2px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+        .mav-3d {
+            text-shadow: 1px 1px 2px #000, 0 0 1em #8B4513, 0 0 0.2em #c48f5a;
+            margin-bottom: 0;
+        }
+        @media (max-width: 900px) {
+            h2 {
+                font-size: 4vw;
+            }
+            .content, .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+            .sql1 img,
+            .sql2 img {
+                width: 70vw;
+                max-width: 90vw;
+                height: 30vh;
+                max-height: 50vh;
+            }
+            .sql3 img {
+                width: 70vw;
+                max-width: 80vw;
+                height: 20vh;
+                max-height: 35vh;
+            }
+            .output1 img,
+            .output2 img,
+            .output3 img,
+            .output4 img,
+            .output5 img,
+            .output6 img {
+                width: 80vw;
+                max-width: 90vw;
+                height: auto;
+                max-height: 30vh;
+            }
+            a {
+                font-size: 3vw;
+            }
+            h4 {
+                font-family: 'Russo One', sans-serif;
+                margin-left: 6%;
+                margin-bottom: 0;
+                font-size: 2.8vw;
+                margin-top: 1.3%;
+                background-color: black;
+                width: 8.4vw;
+                border-radius: 5px;
+                padding: 2px;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            }
+            .mav-3d {
+                text-shadow: 1px 1px 2px #000, 0 0 1em #8B4513, 0 0 0.2em #c48f5a;
+                margin-bottom: 0;
+            }
+        }
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 6vw;
+                margin-top: 5%;
+            }
+            a {
+                font-size: 5vw;
+            }
+            .sql1 img,
+            .sql2 img {
+                width: 85vw;
+                height: 25vh;
+            }
+            .sql3 img {
+                width: 90vw;
+                height: 20vh;
+                max-height: 35vh;
+            }
+            .output1 img,
+            .output2 img,
+            .output3 img,
+            .output4 img,
+            .output5 img,
+            .output6 img {
+                width: 85vw;
+                height: 20vh;
+            }
+            h4 {
+                font-family: 'Russo One', sans-serif;
+                margin-left: 6%;
+                margin-bottom: 0;
+                font-size: 2.8vw;
+                margin-top: 1.3%;
+                background-color: black;
+                width: 8.5vw;
+                border-radius: 5px;
+                padding: 2px;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            }
+            .mav-3d {
+                text-shadow: 1px 1px 2px #000, 0 0 1em #8B4513, 0 0 0.2em #c48f5a;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+    </head>
+<body>
+    <h4 class="mav-3d" style="border: 3px solid #8B4513;"><span style="color: burlywood;">MA</span><span style="color: #c48f5a;">AV</span></h4>
+    <h2><i class="fa fa-database"></i> Sample of my SQL Project</h2>
+    <a href="javascript:history.go(-1)">&larr; BACK</a>
+    <br>
+    <br>
+    <br>
+    <div class="content">
+        <div class="sql1">
+            <img src="imaging/sql1.png">
+        </div>
+        <div class="sql2">
+            <img src="imaging/sql2.png">
+        </div>
+        <div class="sql3">
+            <img src="imaging/sql3.png">
+        </div>
+    </div>
+<br>
+<br>
+    <h2>OUTPUT </h2>
+    <div class="container">
+        <div class="output1">
+            <img src="imaging/output1.png">
+        </div>
+        <div class="output2">
+            <img src="imaging/output2.png">
+        </div>
+        <div class="output3">
+            <img src="imaging/output3.png">
+        </div>
+        <div class="output4">
+            <img src="imaging/output4.png">
+        </div>
+        <div class="output5">
+            <img src="imaging/output5.png">
+        </div>
+        <div class="output6">
+            <img src="imaging/output6.png">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Achievements</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Russo+One&display=swap" rel="stylesheet">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #8B4513;
+            }
+            a {
+                font-size: 1.5vw;
+                font-weight: bolder;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: white;
+                text-decoration: none;
+                display: inline-block;
+                position: absolute;
+                top: 90px;
+                left: 20px;
+                z-index: 1;
+            }
+            a:hover {
+                transform: scale(1.05);
+                color: burlywood;
+            }
+            .slider {
+                position: relative;
+                overflow: hidden;
+                width: 50%;
+                z-index: 0;
+                margin-top: 7%;
+            }
+            .images {
+                display: flex;
+                width: 500%;
+            }
+            .images img {
+                height: 520px;
+                margin-bottom: 5px;
+                width: 20%;
+                border-radius: 10px;
+                border: 5px solid burlywood;
+                max-width: 700%;
+                transition: all 0.15s ease;
+            }
+            .images input {
+                display: none;
+            }
+            .dot {
+                display: flex;
+                justify-content: center;
+                margin: 5px;
+            }
+            .dot label {
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                border: solid #fff 3px;
+                cursor: pointer;
+                transition: all 0.15s ease;
+            }
+            .dot label:hover {background: #fff;}
+            #img1:checked ~ .m1 {
+                margin-left: 0;
+            }
+            #img2:checked ~ .m2 {
+                margin-left: -20%;
+            }
+            #img3:checked ~ .m3 {
+                margin-left: -40%;
+            }
+            #img4:checked ~ .m4 {
+                margin-left: -60%;
+            }
+            #img5:checked ~ .m5 {
+                margin-left: -80%;
+            }
+            #img6:checked ~ .m6 {
+                margin-left: -100%;
+            }
+            h2 {
+                position: absolute;
+                top: 20px;
+                font-size: 2.1vw;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #fff;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 20px 20px;
+                border-radius: 5px;
+                z-index: 1;
+        }
+        h4 {
+            font-family: 'Russo One', sans-serif;
+            margin-left: 6%;
+            margin-bottom: 0;
+            font-size: 1.7vw;
+            margin-top: 0;
+            background-color: black;
+            width: 5.8vw;
+            border-radius: 5px;
+            padding: 2px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+        .mav-3d {
+            text-shadow: 1px 1px 2px #000, 0 0 1em #8B4513, 0 0 0.2em #c48f5a;
+            margin: 0;
+            margin-bottom: 45%;
+            margin-right: 80%;
+            font-size: 1.7vw;
+            position: absolute;
+            z-index: 1;
+        }
+        @media (max-width: 900px) {
+            .images img {
+                width: 20%;
+                height: 50vh;
+            }
+            .slider {
+                width: 80%;
+            }
+            .dot label {
+                height: 20px;
+                width: 25px;
+            }
+            h2 {
+                font-size: 4vw;
+                text-align: center;
+            }
+            a {
+                font-size: 3.5vw;
+                top: 160px;
+            }
+            h4 {
+                font-family: 'Russo One', sans-serif;
+                margin-left: 6%;
+                margin-bottom: 0;
+                margin-top: 0;
+                background-color: black;
+                width: 10vw;
+                border-radius: 5px;
+                padding: 2px;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            }
+            .mav-3d {
+                text-shadow: 1px 1px 2px #000, 0 0 1em #8B4513, 0 0 0.2em #c48f5a;
+                margin: 0;
+                margin-bottom: 110%;
+                margin-right: 80%;
+                font-size: 2.8vw;
+                width: 8.4;
+                position: absolute;
+                z-index: 1;
+            }
+        }    
+        @media (max-width: 768px) {
+            .images img {
+                margin-top: 9%;
+                width: 20%;
+                height: 50vh;
+            }
+            .slider {
+                width: 80%;
+            }
+            .dot label {
+                height: 18px;
+                width: 20px;
+            }
+            h2 {
+                font-size: 6vw;
+                text-align: center;
+            }
+            a {
+                font-size: 5vw;
+                margin-bottom: 160px;
+                bottom: 5%;
+            }
+            a:hover {
+                transform: scale(1..01);
+            }
+            h4 {
+                font-family: 'Russo One', sans-serif;
+                margin-left: 6%;
+                margin-bottom: 0;
+                margin-top: 3px;
+                background-color: black;
+                width: 10vw;
+                border-radius: 5px;
+                padding: 2px;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            }
+            .mav-3d {
+                text-shadow: 1px 1px 2px #000, 0 0 1em #8B4513, 0 0 0.2em #c48f5a;
+                margin: 0;
+                margin-top: 15%;
+                margin-bottom: 130%;
+                margin-right: 80%;
+                font-size: 3vw;
+                width: 11.7vw;
+                position: absolute;
+                z-index: 1;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <h4 class="mav-3d" style="border: 3px solid #8B4513;"><span style="color: burlywood;">MA</span><span style="color: #c48f5a;">AV</span></h4>
+        <h2><i class="fa fa-trophy"></i> The slider of my academic achievements</h2>
+        <a href="javascript:history.go(-1)">&larr; BACK</a>
+        <div class="slider">
+            <div class="images">
+                <input type="radio" name="slide" id="img1" checked>
+                <input type="radio" name="slide" id="img2">
+                <input type="radio" name="slide" id="img3">
+                <input type="radio" name="slide" id="img4">
+                <input type="radio" name="slide" id="img5">
+                <input type="radio" name="slide" id="img6">
+
+                <img src="imaging/achieve1.png" class="m1" alt="img1">
+                <img src="imaging/achieve2.png" class="m2" alt="img2">
+                <img src="imaging/achieve3.png" class="m3" alt="img3">
+                <img src="imaging/achieve4.jpg" class="m4" alt="img4">
+                <img src="imaging/achieve5.jpg" class="m5" alt="img5">
+                <img src="imaging/achieve6.jpg" class="m6" alt="img6">
+            </div>
+            <div class="dot">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+                <label for="img4"></label>
+                <label for="img5"></label>
+                <label for="img6"></label>
+            </div>
+        </div>
+    </body>
+</html>
